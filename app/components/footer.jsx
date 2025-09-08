@@ -9,16 +9,13 @@ const Footer = () => {
         <a href="#contact">Contact</a>
       </div>
       <div className="flex gap-2">
-        <a href="#">
+        <a href="https://www.instagram.com/azyz_067/">
           <i className="ri-instagram-fill ri-2x"></i>
         </a>
-        <a href="#">
+        <a href="https://github.com/HarunLukmanulaziz/">
           <i className="ri-github-fill ri-2x"></i>
         </a>
-        <a href="#">
-          <i className="ri-reddit-fill ri-2x"></i>
-        </a>
-        <a href="#">
+        <a href="https://www.youtube.com/@lukmanShort">
           <i className="ri-youtube-fill ri-2x"></i>
         </a>
       </div>

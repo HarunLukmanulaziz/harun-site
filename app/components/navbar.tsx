@@ -48,6 +48,11 @@ const Navbar = () => {
             </p>
           </a>
         </li>
+        <li>
+          <div className="dark">
+            <button>🌙</button>
+          </div>
+        </li>
       </ul>
     </div>
   );

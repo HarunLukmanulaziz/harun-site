@@ -3,6 +3,7 @@ import App from "./app";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
 import "animate.css";
+import mode from "./components/darkmode"; //
 
 export default function Home() {
   return (
