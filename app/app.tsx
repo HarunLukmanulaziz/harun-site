@@ -308,8 +308,8 @@ function app() {
                   <textarea
                     name="pesan"
                     id="pesan"
-                    cols="45"
-                    rows="7"
+                    cols={45}
+                    rows={7}
                     placeholder="pessan..."
                     className="border text-[#000] border-zinc-600 p-2 rounded-md bg-[#eee]"
                     required
