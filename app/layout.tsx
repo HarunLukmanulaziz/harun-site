@@ -30,7 +30,6 @@ export default function RootLayout({
       </head>
       <body className={poppins.variable}>
         {children}
-
         {/* AOS */}
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>AOS.init();</script>

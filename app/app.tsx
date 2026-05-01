@@ -13,10 +13,20 @@ function app() {
     <div>
       <div>
         <div>
-          <div className=" hero  grid grid-cols-12" id="home">
+          <div className="block md:hidden mb-4">
+            <img
+              src="fotoProfile.png"
+              alt="foto profile"
+              className="w-32 h-32 mt-10 object-cover  rounded-full mx-auto "
+            />
+          </div>
+          <div
+            className=" hero flex item-center justify-between md:grid grid-cols-12"
+            id="home"
+          >
             <div className=" col-span-6">
-              <div className=" animate__animated animate__fadeInUp pt-5">
-                <div className="  items-center gap-3  w-fit animate__animated animate__fadeInLeft animate__slow">
+              <div className=" animate__animated animate__fadeInUp pt-5  md:mt-20 justify-center ">
+                <div className=" items-center gap-3 justify-center  md:w-fit animate__animated animate__fadeInLeft animate__slow">
                   <GradientText
                     colors={[
                       "#929AAB",
@@ -36,7 +46,11 @@ function app() {
                 <div className="py-6 text-[#000] flex items-center gap-2">
                   <h1 className="text-4xl font-bold">Hi, I'm Harun.</h1>
                   <RotatingText
-                    texts={["WEB DEVELOPMENT", "UI/UX DESIHGN"]}
+                    texts={[
+                      "WEB DEVELOPER",
+                      "FRONT END DEVELOPER",
+                      "ALSO NETWORK ENGINER",
+                    ]}
                     mainClassName="text-2xl font-bold bg-[#393E46] text-[#F7F7F7] overflow-hidden inline-flex justify-center rounded-lg transition-all pt-1 px-2 md:px-3"
                     staggerFrom={"last"}
                     initial={{ y: "100%" }}
@@ -50,10 +64,11 @@ function app() {
                 </div>
 
                 <p className="text-[#393E46] mb-6 opacity-90">
-                  I have a strong interest in Programming and Design, especially
-                  in Website development and creating designs such as Posters,
-                  Pamphlets, and Banners. My passion for these fields has been
-                  ongoing for more than 4 years across all areas.
+                  I have a strong interest in both programming and design,
+                  especially in web development. My passion for this field
+                  started during my second year of vocational high school, and I
+                  have continuously improved my skills while exploring creative
+                  and effective ways to deliver engaging digital solutions.
                 </p>
 
                 <div className="flex gap-3">
@@ -72,12 +87,12 @@ function app() {
                 </div>
               </div>
             </div>
-            <div className="col-span-6">
+            <div className=" col-span-6 hidden md:block">
               <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
             </div>
           </div>
           {/* tentang */}
-          <div className="tentang mt-32 py-10" id="about">
+          <div className="tentang mt-20 py-10" id="about">
             <div
               className=" lg:w-2/3 mx-auto p-4 rounded-xl"
               data-aos="fade-up"
@@ -89,12 +104,16 @@ function app() {
                 spotlightColor="rgba(255, 255, 255, 0.30)"
               >
                 <p className="text-xl">
-                  Hello, my name is Harun Lukmanulaziz. I am a Full Stack Web
-                  Developer and Designer with a focus on UI/UX design and
-                  digital product development. I firmly believe that aesthetics
-                  and functionality must go hand in hand, ensuring that every
-                  project I create is not only visually compelling but also
-                  delivers a seamless and effective user experience.
+                  Hello, my name is Harun Lukmanulaziz. I am a Front-End Web
+                  Developer with a strong focus on building responsive, modern,
+                  and user-friendly web applications. I have experience working
+                  with technologies such as HTML, CSS, JavaScript, React,
+                  Tailwind CSS, and Next.js. I enjoy transforming ideas into
+                  interactive and visually appealing digital experiences, with
+                  attention to clean code and performance optimization. I am
+                  passionate about continuously learning new technologies and
+                  improving my skills to create better and more efficient web
+                  solutions.
                 </p>
                 <div className="grid grid-cols-1 gap-3  md:grid-cols-2 py-8">
                   <Image
@@ -103,11 +122,12 @@ function app() {
                     width={100}
                     height={100}
                     priority
+                    className="hidden md:block"
                   />
                   <div className="flex gap-4 font-semibold">
                     <div className=" ">
                       <h1 className="text-4xl mb-1">
-                        6<span className="text-[#eee]">+</span>
+                        4<span className="text-[#eee]">+</span>
                       </h1>
                       <p className="opacity-70">Completed Projects</p>
                     </div>
@@ -134,7 +154,7 @@ function app() {
               TOOLS I USE
             </h1>
             <p
-              className="text-base/loos w-2/5 text-[#000] opacity-80"
+              className="text-base/loos md:w-2/5 text-[#000] opacity-80"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-once="true"
@@ -251,7 +271,7 @@ function app() {
               Feel free to reach out to me.
             </p>
             <form
-              action="https://formsubmit.co/azizmobile2008@gmail.com"
+              action="https://formsubmit.co/harunlukmanulaziz@gmail.com"
               method="POST"
               className="bg-zinc-900 p-2 sm:p-10 sm:w-fit w-full  rounded-xl mx-auto mt-5"
               autoComplete="off"
@@ -260,14 +280,14 @@ function app() {
               data-aos-delay="500"
               data-aos-once="true"
             >
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-6 ">
                 <div className="flex flex-col gap-2">
                   <label className="font-semibold">Name </label>
                   <input
                     type="text"
                     name="nama"
                     placeholder="nama..."
-                    className="border border-zinc-600 bg-[#eee] p-2 rounded-md"
+                    className="border border-zinc-600 text-[#000] bg-[#eee] p-2 rounded-md"
                     required
                   />
                 </div>
@@ -277,7 +297,7 @@ function app() {
                     type="email"
                     name="email"
                     placeholder="email..."
-                    className="border border-zinc-600 bg-[#eee] p-2 rounded-md"
+                    className="border text-[#000] border-zinc-600 bg-[#eee] p-2 rounded-md"
                     required
                   />
                 </div>
@@ -291,7 +311,7 @@ function app() {
                     cols="45"
                     rows="7"
                     placeholder="pessan..."
-                    className="border border-zinc-600 p-2 rounded-md bg-[#eee]"
+                    className="border text-[#000] border-zinc-600 p-2 rounded-md bg-[#eee]"
                     required
                   ></textarea>
                 </div>

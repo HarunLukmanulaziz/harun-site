@@ -1,11 +1,3 @@
-import HeroImg from ".././assets/hero-img.webp";
-
-const Image = {
-  HeroImg,
-};
-
-export default Image;
-
 import Tools1 from ".././assets/tools/vscode.png";
 import Tools2 from ".././assets/tools/reactjs.png";
 import Tools3 from ".././assets/tools/nextjs.png";
@@ -84,36 +76,33 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.webp";
-import Proyek2 from "/assets/proyek/proyek2.webp";
-import Proyek3 from "/assets/proyek/proyek3.webp";
-import Proyek4 from "/assets/proyek/proyek4.webp";
-import Proyek5 from "/assets/proyek/proyek5.png";
-import Proyek6 from "/assets/proyek/proyek6.webp";
+import Proyek1 from "/assets/proyek/apkcuaca.png";
+import Proyek2 from "/assets/proyek/portfolio.png";
+import Proyek3 from "/assets/proyek/musicplayer.png";
 
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
-    nama: "Website Sekolah",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "AOS", "Framermotion"],
+    nama: "SkyScope",
+    desk: "This application is a web-based platform developed using JavaScript to display real-time weather information. It is integrated with the API from OpenWeatherMap, enabling it to provide accurate and up-to-date weather data based on the user typed.",
+    tools: ["HTML", "CSS", "Javascript"],
     dad: "200",
   },
   {
     id: 2,
-    gambar: Proyek4,
-    nama: "Website Course",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["Vite", "ReactJS", "Bootstrap", "AOS"],
-    dad: "500",
+    gambar: Proyek2,
+    nama: "Web Portfolio",
+    desk: "This project is a personal portfolio website built to showcase my skills, projects, and experience as a front-end developer. It is developed using modern web technologies with a focus on responsive design, clean UI, and smooth user experience.",
+    tools: ["HTML", "JS", "next.js", "react", "tailwind"],
+    dad: "300",
   },
   {
     id: 3,
-    gambar: Proyek5,
-    nama: "Web Portfolio",
-    desk: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, laborum!",
-    tools: ["HTML", "CSS", "Javascript", "Bootsrap"],
-    dad: "600",
+    gambar: Proyek3,
+    nama: "Music Player",
+    desk: "This is a personal side project that features a music player capable of playing songs along with synchronized lyrics. Users can also customize the experience by adding their own lyrics and background videos.",
+    tools: ["HTML", "CSS", "Javascript"],
+    dad: "400",
   },
 ];

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <div className="min-h-screen font-poppins overflow-x-hidden bg-[#eee]">
+        <Navbar />
         <div className="container  mx-auto px-4 ">
-          <Navbar />
           <App />
         </div>
         <Footer />
