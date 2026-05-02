@@ -117,12 +117,11 @@ function app() {
                 </p>
                 <div className="grid grid-cols-1 gap-3  md:grid-cols-2 py-8">
                   <Image
-                    src="/assets/logo.png"
-                    alt="Hero"
+                    src="/logo.png"
+                    alt="logo"
                     width={100}
                     height={100}
-                    priority
-                    className="hidden md:block"
+                    className="hidden md:block "
                   />
                   <div className="flex gap-4 font-semibold">
                     <div className=" ">
